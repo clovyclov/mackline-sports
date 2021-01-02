@@ -66,13 +66,31 @@ span.headline-underline:before {
 
 .main-section {
     padding: 120px 0;
+    display: flex;
+    align-items: center;
 }
 
 .mack-bg {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.mack-bg:before {
+    content: '';
     background-image: url(/img/mack-blue-bg.jpg);
-    background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: right top;
+    width: 50%;
+    min-height: 300px;
+    display: block;
+    position: absolute;
+    right: 0;
+    background-size: cover;
+    bottom: 0;
+    top: 0;
 }
 
 .hero-bg-section {
