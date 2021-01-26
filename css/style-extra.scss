@@ -45,11 +45,41 @@ body {
 		margin-bottom: 12px;
 	}
 
+	&__login {
+		display: flex;
+		flex-direction: column;
+		max-width: 600px;
+		margin: auto;
+	}
+
+	&__input {
+		padding: 20px;
+		margin-bottom: 20px;
+		border: 1px solid #ddd;
+		font-size: 24px;
+	}
+
+	&__form-button {
+		border-radius: 0;
+		font-size: 24px;
+	}
+
+	&__forgot-link {
+		font-style: italic;
+		font-size: 20px;
+		text-decoration: none;
+		display: inline-block;
+		margin: 20px auto;
+	}
+
 	&--blue {
 		background-color: #05709d;
 	}
 	&--blue-text {
 		color: #05709d;
+	}
+	&--white-text {
+		color: white;
 	}
 	&--noPadding {
 		padding: 0;
