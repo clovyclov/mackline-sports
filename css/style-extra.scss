@@ -2,10 +2,24 @@ body {
 	padding-top: 110px;
 }
 
+ul {
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
 .header {
 	&--blue {
 		background-color: #05709d;
 	}
+}
+
+.blue-shadow {
+	box-shadow: -6px 6px 0 0 #05709d;
 }
 
 .section {
@@ -94,4 +108,51 @@ body {
 		max-width: 600px;
 		margin: auto;
 	}
+}
+
+.questions {
+	&__question {
+		padding: 60px 0;
+		border-bottom: 1px solid #ccc;
+	}
+	&__form {
+		padding-bottom: 100px;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		height: 40px;
+		padding: 10px;
+		border-radius: 2px;
+		border: 1px solid #ccc;
+	}
+
+	&__subtext {
+		margin-top: 10px;
+		display: block;
+	}
+
+	&__button {
+		background-color: #6ec14a;
+		color: white;
+		margin-top: 40px;
+		padding: 18px 40px 12px 40px;
+		font-size: 1.5rem;
+		font-weight: bold;
+		border: none;
+	}
+}
+
+.tie-breaker {
+	&__container {
+		padding: 30px;
+		background: #eee;
+		margin-bottom: 40px;
+	}
+}
+
+.range {
+	border-right: 2px solid #ccc;
+	padding: 20px 0;
 }
